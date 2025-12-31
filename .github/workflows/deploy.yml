@@ -20,11 +20,6 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Setup WARP
-        uses: fscarmen/warp-on-actions@v1.1
-        with:
-          stack: dual
-
       - name: Log in to the Container registry
         uses: docker/login-action@v3
         with:
