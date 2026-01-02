@@ -55,7 +55,7 @@ jobs:
             podman stop ${{ env.CONTAINER_NAME }} || true
             podman rm ${{ env.CONTAINER_NAME }} || true
 
-            mkdir -p /home/${{ secrets.SERVER_USER }}/apps/tg-bot
+            mkdir -p /home/${{ secrets.SERVER_USER }}/apps/tg-bot/data
             
             podman run -d \
               -v /home/${{ secrets.SERVER_USER }}/apps/tg-bot/data:/app/data \
