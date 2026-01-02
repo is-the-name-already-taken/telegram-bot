@@ -58,6 +58,7 @@ jobs:
             mkdir -p /home/${{ secrets.SERVER_USER }}/apps/tg-bot
             
             podman run -d \
+              -v /home/${{ secrets.SERVER_USER }}/apps/tg-bot/data:/app/data \
               --name ${{ env.CONTAINER_NAME }} \
               --network host \
               --env-file /home/${{ secrets.SERVER_USER }}/apps/tg-bot/.env \
