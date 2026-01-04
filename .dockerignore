@@ -1,0 +1,14 @@
+.git
+.github
+.gitignore
+
+.env
+.env.example
+.python-version
+
+README.md
+docker-compose.yml
+
+__pycache__/
+*.pyc
+.venv/
