@@ -2,7 +2,7 @@ import sqlite3
 
 
 class DB:
-    def __init__(self, name="db.sqlite3"):
+    def __init__(self, name="data/db.sqlite3"):
         self.conn = sqlite3.connect(name)
 
     def close(self):
